@@ -15,3 +15,10 @@ DB = ActiveRecord::Base.establish_connection({
 if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
+
+=begin
+show1= Show.new("Parks and rec", "Netflix", "Wednesday", 10)
+show2= Show.new("American Horror Story", "FX", "Tuesday", 10)
+show3= Show.new("New Girl", "FX", "Monday", 7)
+binding.pry
+=end
